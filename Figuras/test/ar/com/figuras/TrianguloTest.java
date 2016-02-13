@@ -21,7 +21,7 @@ public class TrianguloTest {
 	@Test
 	public void perimetroConTrianguloIsosceles() 
 	{
-	Triangulo miTriangulo = new Triangulo(8.0, 5.0, 8.0);
+	Triangulo miTriangulo = new Triangulo(5.0, 8.0, 8.0);
 	Double valor_esperado = 21.0;
 	Double valor_obtenido = miTriangulo.calcularTrianguloPerimetro();
 	assertEquals(valor_esperado.doubleValue(),valor_obtenido.doubleValue(),0.1);
