@@ -43,26 +43,26 @@ public class TrianguloTest {
 	public void areaConTrianguloEquilatero()
 	{
 	Triangulo miTriangulo = new Triangulo(5.0, 5.0, 5.0);
-	Double valor_esperado = 10.8253;
+	Double valor_esperado = 13.975;
 	Double valor_obtenido = miTriangulo.calcularTrianguloArea();
-	assertEquals(valor_esperado.doubleValue(),valor_obtenido.doubleValue(),0.01);
+	assertEquals(valor_esperado.doubleValue(),valor_obtenido.doubleValue(),0.1);
 	}
 	
 	@Test
 	public void areaConTrianguloIsosceles()
 	{
-	Triangulo miTriangulo = new Triangulo(8.0, 4.0, 8.0);
-	Double valor_esperado = 15.4919;
+	Triangulo miTriangulo = new Triangulo(4.0, 8.0, 8.0);
+	Double valor_esperado = 16.492;
 	Double valor_obtenido = miTriangulo.calcularTrianguloArea();
-	assertEquals(valor_esperado.doubleValue(),valor_obtenido.doubleValue(),0.01);
+	assertEquals(valor_esperado.doubleValue(),valor_obtenido.doubleValue(),0.1);
 	}
 	
 	@Test
 	public void areaConTrianguloEscaleno()
 	{
 	Triangulo miTriangulo = new Triangulo(3.0, 5.0, 7.0);
-	Double valor_esperado = 6.4951;
+	Double valor_esperado = 7.830;
 	Double valor_obtenido = miTriangulo.calcularTrianguloArea();
-	assertEquals(valor_esperado.doubleValue(),valor_obtenido.doubleValue(),0.01);
+	assertEquals(valor_esperado.doubleValue(),valor_obtenido.doubleValue(),0.1);
 	}
 }
